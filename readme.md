@@ -17,7 +17,7 @@
 
 ### 安裝：
 
-1. 進入專案
+####1. 進入專案
    cd restaurant_list
 2. 安裝套件
    npm install
