@@ -1,6 +1,6 @@
 # 餐廳清單
 
-此專案為八間我最喜歡的餐廳介紹清單
+此專案為餐廳清單
 
 ## 可以在首頁看到所有餐廳與它們的簡單資料：
 
@@ -9,7 +9,13 @@
 餐廳分類
 餐廳評分
 
-## 點擊可以看個別餐廳的詳細資訊：
+## 使用者可以自行增減餐廳：
+
+新增餐廳
+修改餐廳
+刪除餐廳
+
+## 點擊卡片或詳細資訊可以看個別餐廳的詳細資訊：
 
 類別、地址、電話、描述、圖片
 
@@ -21,13 +27,19 @@
    cd restaurant_list
 2. 安裝套件
    npm install
-3. 啟動專案(nodemon)
+3. 加入種子資料(八間)
+   npm run seed
+4. 啟動專案(nodemon)
    npm run dev
-4. 出現"This server is running on localhost:3000"訊息
+5. 出現"This server is running on localhost:3000"訊息
    於 http://localhost:3000/ 開始使用
 
-### 使用工具：
+### 開發環境：
 
-- [Visual Studio Code](https://visualstudio.microsoft.com/zh-hant/) - 開發環境
-- [Express](https://www.npmjs.com/package/express) - 應用程式架構
-- [Express-Handlebars](https://www.npmjs.com/package/express-handlebars) - 模板引擎
+- [Visual Studio Code]
+- [Express]
+- [Express-Handlebars]
+- [Node.js]
+- [mongodb]
+- [mongoose]
+- [body-parser]
