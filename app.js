@@ -89,7 +89,7 @@ app.get('/restaurants/:id/edit', (req, res) => {
   const id = req.params.id
   return Restaurant.findById(id)
     .lean()
-    .then((restaurant) => res.render('edit', { restaurant }))
+    .then(restaurant => res.render('edit', { restaurant }))
     .catch(error => console.log(error))
 })
 
@@ -108,7 +108,7 @@ app.post('/restaurants/:id/edit', (req, res) => {
     restaurant.description = editData.description
     return restaurant.save()
   })
-    .then(() => res.redirect('/restaurants/${id}'))
+    .then(() => res.redirect(`/restaurants/${id}`))
     .catch(error => console.log(error))
 })
 
@@ -125,3 +125,5 @@ app.post('/restaurants/:id/delete', (req, res) => {
 app.listen(port, () => {
   console.log(`Express is listening on localhost:${port}`)
 })
+
+
