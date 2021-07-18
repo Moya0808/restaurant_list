@@ -40,7 +40,7 @@
       
       <div class="text-right p-2">
         <a href="/restaurants/{{restaurant._id}}/edit" class="btn btn-primary">編輯</a>
-        <form action="/restaurants/{{ restaurant._id }}/delete" method="POST" style="display: inline;">
+        <form action="/restaurants/{{ restaurant._id }}?_method=DELETE" method="POST" style="display: inline;">
           <button type="submit" class="btn btn-danger">刪除</button>
         </form>
         <a href="/" class="btn btn-primary">返回</a>
